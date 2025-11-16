@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto INSS</title>
+</head>
+<body>
+    <!--Questão 103. Faça um algoritmo que leia o salário de uma pessoa e imprime o desconto do INSS segundo os itens.
+    • <= R$600 = isento
+    • > R$601 e <= R$1200 = 20%
+    • > R$1201 e <= R$2000 = 25%
+    • > R$2001 = 30%.-->
+    <script>
+        let valor = prompt("Informe seu Salário para saber o desconto do INSS: ");
+        valor = parseFloat(valor);
+        if (valor <= 600){
+            document.write('Isento')
+        } else if (valor > 600 && valor <= 1200){
+            valor *= 0.2
+            document.write(`20% = R$ ${valor.toFixed(2)}`)
+        } else if (valor > 1200 && valor <= 2000){
+            valor *= 0.25
+            document.write(`25% = R$ ${valor.toFixed(2)}`)
+        } else{
+            valor *= 0.3
+            document.write(`30% = R$ ${valor.toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>

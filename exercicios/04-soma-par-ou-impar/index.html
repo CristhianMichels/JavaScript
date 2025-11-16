@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma é par ou impar</title>
+</head>
+<body>
+    <!--Questão 7. Faça um algoritmos que leia três valores e mostra se a soma dos valores é par ou ímpar.-->
+    <script>
+        let valor1 = parseInt(prompt("Digite o valor 1: "));
+        let valor2 = parseInt(prompt("Digite o valor 2: "));
+        let valor3 = parseInt(prompt("Digite o valor 3: "));
+
+        let soma = valor1 + valor2 + valor3;
+        if (soma % 2 == 0){
+            document.write(`O Valor ${soma} é par`);
+        } else{
+            document.write(`O Valor ${soma} é ímpar`);
+        }
+    </script>
+</body>
+</html>

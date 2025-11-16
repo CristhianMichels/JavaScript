@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados</title>
+</head>
+<body>
+    <!--Questão 75. Faça um algoritmo que ao entrar com a sigla do estado, retorna uma das mensagens:
+        • RS – gaúcho
+        • RJ – carioca
+        • SP – paulista
+        • MG – mineiro
+        • Outros estados-->
+
+    <script>
+        let estado = prompt("Digite a sigla do estado: ").toUpperCase();
+
+        if (estado == 'RS'){
+            document.write('RS – gaúcho');
+        } else if (estado == 'RJ'){
+            document.write('RJ – carioca');
+        } else if (estado == 'SP'){
+            document.write('SP – paulista');
+        } else if (estado == 'MG'){
+            document.write('MG – mineiro');
+        } else{
+            document.write('Outros estados');
+        }
+            
+
+    </script>
+</body>
+</html>

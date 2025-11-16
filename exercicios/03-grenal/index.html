@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grenal</title>
+</head>
+<body>
+    <!--Questão 58. Escreva um algoritmo para ler o número de gols marcados pelo Grêmio e o número
+    de gols marcados pelo Inter em um GRENAL. Escreva o nome do vencedor. Caso não haja vencedor,
+    mostre na tela uma mensagem de EMPATE.-->
+    <script>
+        let gols_gremio = prompt("Digite os gols do Grêmio: ");
+        let gols_inter = prompt("Digite os gols do Inter: ");
+        gols_gremio = parseInt(gols_gremio);
+        gols_inter = parseInt(gols_inter);
+
+        if (gols_gremio > gols_inter){
+            document.write("O Grêmio Ganhou!");
+        } else if (gols_inter > gols_gremio){
+            document.write("O Inter Ganhou!!");
+        } else{
+            document.write('EMPATE');
+        }
+    </script>
+</body>
+</html>

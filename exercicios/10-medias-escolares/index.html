@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média escolar</title>
+</head>
+<body>
+    <!--Questão 60. Faça um algoritmo onde o usuário digita 3 notas e seu nome. O programa deverá calcular a média das notas e mostrar seu nome e a média com a mensagem:
+        • Inferior a 6,0 - Reprovado, faltou estudo!!!
+        • 6,1 a 6,9 - Recuperação, pode melhorar
+        • 7,0 a 8,0 - Aprovado, mas não ganha coxinha
+        • 8,1 a 9,7 – "Aprovado!"
+        • 9,8 a 10 - "Aprovado, levando a coxinha no final do semestre":-)"-->
+    <script>
+        let nota1 = parseFloat(prompt("Digite um valor: "));
+        let nota2 = parseFloat(prompt("Digite um valor: "));
+        let nota3 = parseFloat(prompt("Digite um valor: "));
+
+        media = (nota1 + nota2 + nota3)/ 3;
+        if (media < 6){
+            document.write('Reprovado, faltou estudo!!!');
+        } else if (media >= 6 && media < 7){
+            document.write('Recuperação, pode melhorar');
+        } else if (media >= 7 && media <= 8){
+            document.write('Aprovado, mas não ganha coxinha'); 
+        } else if (media > 8 && media <= 9.7){
+            document.write('Aprovado!');
+        } else{
+            document.write('Aprovado, levando a coxinha no final do semestre :-)');
+        }
+    </script>
+</body>
+</html>

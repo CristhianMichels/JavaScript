@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisivel</title>
+</head>
+<body>
+    <!--Questão 74. Faça um algoritmo que leia um número e informe se ele é divisível por 3 OU por 5 OU divisível por 7.-->
+    <h1>Verifique o Console</h1>
+    <script>
+        let valor = prompt("Digite um valor: ");
+        let achou = false
+        valor = parseInt(valor);
+        if (valor % 3 == 0){
+            console.log(`O valor ${valor} é divisível por 3`);
+            achou = true
+        } 
+
+        if (valor % 5 == 0){
+            console.log(`O Valor ${valor} é divisível por 5`);
+            achou = true
+        } 
+
+        if (valor% 7 == 0){
+            console.log(`O valor ${valor} é divisível por 7`);
+            achou = true
+        } 
+
+        if (!achou){
+            console.log('O valor não é divisível por 3,5, ou 7');
+        }
+    </script>
+</body>
+</html>
