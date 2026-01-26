@@ -1,2 +1,2 @@
 # javascript
-Meus estudos de JavaScript
+My JavaScript studies
